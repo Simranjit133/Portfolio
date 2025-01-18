@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #00b6ff,#0087ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: black;
+}
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 600px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+header h1{
+    font-size: 2.5rem;  /*root element */
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+} 
+
+section{
+    margin-bottom: 20px;
+}
+section h2{
+    font-size: 1.8rem;
+    color: blue;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+section p,ul{
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+ul{
+    padding-left:0 ;
+    list-style: none;
+}
+
+ul li{
+    padding: 10px;
+    background-color:#f3f4f6 ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+ul li i{
+    margin-right: 5px;
+}
+
+ul li:hover{
+    background-color: #e0e0e0;
+}
+
+button{
+    background: linear-gradient(135deg , #00b6ff,#0087ff);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: transform 0.5s ease , background 1s ease;
+}
+button:hover{
+    transform: scale(1.2);
+    background: linear-gradient(135deg , #00b6ff,#0087ff);
+}
+
+#fact {  
+    margin-top: 15px;  
+    font-weight: bold; /* Change to font-weight */  
+    color: blueviolet;  
+    transform: translateY(-20px); /* Start position above the button */  
+    opacity: 0; /* Start with invisible text */  
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Animate changes */  
+}  
+
+#fact.show {  
+    transform: translateY(0); /* Move to original position */  
+    opacity: 1; /* Make it visible */  
+}  
+
+#profile-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#profile-picture img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border:5px solid blue;
+    transition: transform 0.5s ease;
+}
+#profile-picture img:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
