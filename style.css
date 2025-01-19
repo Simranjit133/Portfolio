@@ -115,6 +115,11 @@ button:hover{
     transform: scale(1.2);
 }
 
+.hlink{
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
 
 
 
